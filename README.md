@@ -1,3 +1,11 @@
+# Magic 8ball ![8ball][8ball]
+
+[8ball]: /public/images/favicon.ico "8ball"
+
+![react][logo]
+
+[logo]: /images/react_logo.png "React 16"
+
 ### Using:
 - __React.js v16__
 - __live-server__: https://www.npmjs.com/package/live-server
@@ -9,7 +17,7 @@
 - __React-DOM__: https://reactjs.org/docs/react-dom.html  
 - __React-modal__: https://github.com/reactjs/react-modal
  ---
- 
+
  ### project specific:
  1) yarn init
  2) yarn add babel-preset-react@6.24.1
@@ -24,35 +32,35 @@
  11) yarn add style-loader@0.18.2 css-loader@0.28.4
  12) yarn add sass-loader@6.0.6 node-sass@4.5.3
  13) yarn add normalize.css@7.0.0
- 
+
  ##### by using _local modules_, we can use package.json `scripts` to run live-server and babel in CLI tabs:
  - `yarn run serve`
  - `yarn run build`
- 
+
  ```JSON
  "scripts": {
      "serve": "live-server public/",
      "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
  }
  ```
- 
+
  #### `public` folder is for production code deployment -> transpile into this folder
- 
+
  #### `src` folder is for development -> work in this folder
- 
+
  ---
- 
- 
+
+
  #### _Ignored by JSX:_ they do not render to the page
  `undefined`
  `null`
  `true`
  `false`  
- 
+
  ---
- 
+
  ### Webpack
- 
+
 - `webpack.config.js` __NEEDS__ to live in the root project folder
 - `webpack.config.js` is a Node script.
 
