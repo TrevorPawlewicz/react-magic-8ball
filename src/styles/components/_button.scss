@@ -1,0 +1,44 @@
+/* use for smaller devices */
+.big-button {
+    background: $purple;
+    border: none;
+    border-bottom: .6rem solid darken($purple, 10%);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size;
+    padding: 2.4rem;
+    width: 100%;
+}
+
+.big-button:disabled {
+    opacity: 0.5;
+}
+
+// other buttons:
+.button {
+    background: $purple;
+    border: none;
+    border-bottom: .3rem solid darken($purple, 10%);
+    color: #ffffff;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+// modifiers:
+.button--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+
+
+/* use for bigger devices over 45rem */
+@media (min-width: $desktop-breakpoint) {
+
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}

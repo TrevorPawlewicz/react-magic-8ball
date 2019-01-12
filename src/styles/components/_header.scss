@@ -1,0 +1,32 @@
+/* use for smaller devices */
+.header {
+    background: $off-black;
+    color: #ffffff;
+    margin-bottom: $m-size;
+    padding: $m-size 0;
+    box-shadow: 0px 4px 4px 0px $off-black;
+}
+
+// BEM block element modifier
+.header__title {
+    font-size: $l-size;
+    margin: 0;
+}
+
+.header__subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+
+
+/* use for bigger devices over 45rem */
+@media (min-width: $desktop-breakpoint) {
+
+    .header {
+        margin-bottom: $xl-size;
+    }
+}
